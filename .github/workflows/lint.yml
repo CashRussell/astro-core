@@ -68,7 +68,7 @@ jobs:
       - uses: Swatinem/rust-cache@v2
         with:
           cache-on-failure: true
-      - uses: dcarbone/install-jq-action@v3
+      - uses: dcarbone/install-jq-action@v4
       - name: Run Wasm checks
         run: |
           sudo apt update && sudo apt install gcc-multilib
@@ -87,7 +87,7 @@ jobs:
       - uses: Swatinem/rust-cache@v2
         with:
           cache-on-failure: true
-      - uses: dcarbone/install-jq-action@v3
+      - uses: dcarbone/install-jq-action@v4
       - name: Run RISC-V checks
         run: .github/assets/check_rv32imac.sh
 
