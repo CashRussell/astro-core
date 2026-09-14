@@ -202,7 +202,7 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v5
       - name: Run dprint
-        uses: dprint/check@v2.3
+        uses: dprint/check@v2.5
         with:
           config-path: dprint.json
 
